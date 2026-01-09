@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&family=Rajdhani:wght@500;700&display=swap');
+
+:root {
+  /* BACKGROUND HITAM GAMING */
+  --vp-c-bg: #050508;
+  --vp-c-bg-alt: #0a0a0f;
+  
+  /* WARNA NEON */
+  --vp-c-brand-1: #2962ff; /* Biru */
+  --vp-c-brand-2: #d500f9; /* Ungu */
+  --vp-c-brand-3: #00e676; /* Hijau */
+  
+  --vp-font-family-base: "Rajdhani", sans-serif;
+  --vp-font-family-mono: "JetBrains Mono", monospace;
+  --vp-nav-height: 64px; 
+}
+
+/* --- PERBAIKAN HEADER KETUTUPAN --- */
+.VPHero {
+  /* Ini kuncinya: Dorong konten ke bawah */
+  padding-top: calc(var(--vp-nav-height) + 40px) !important; 
+  padding-bottom: 40px !important;
+}
+
+/* Styling Banner Image */
+.VPHero .image-bg { display: none; } /* Hapus bg bawaan */
+
+.VPHero .image-container img {
+  border-radius: 12px;
+  border: 1px solid rgba(41, 98, 255, 0.3);
+  box-shadow: 0 0 30px rgba(41, 98, 255, 0.2); /* Glow Biru */
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Styling Judul */
+.VPHero .name {
+  background: linear-gradient(to right, #2962ff, #d500f9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: var(--vp-font-family-mono);
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.VPHero .text {
+  color: #888;
+  font-family: var(--vp-font-family-mono);
+}
+
+/* --- TOMBOL DOWNLOAD --- */
+.VPButton.brand {
+  background: #2962ff;
+  border-radius: 4px;
+  color: white !important;
+  font-family: var(--vp-font-family-mono);
+  font-weight: 800;
+  text-transform: uppercase;
+  border: none;
+  box-shadow: 0 0 15px rgba(41, 98, 255, 0.4);
+}
+
+.VPButton.alt {
+  background: #111;
+  border: 1px solid #333;
+  color: #ccc !important;
+  border-radius: 4px;
+}
+
+/* --- KARTU FITUR --- */
+.VPFeature {
+  background-color: #0b0b10 !important;
+  border: 1px solid #1f1f1f !important;
+  border-radius: 8px !important;
+}
+
+.VPFeature:hover {
+  border-color: #2962ff !important;
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+
+/* Judul Fitur */
+.VPFeature .title {
+  font-family: var(--vp-font-family-mono);
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* Perbaikan Posisi Icon */
+.VPFeature .icon {
+  background: transparent !important;
+  padding: 0 !important;
+  height: 50px;
+  width: 50px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+/* NAVBAR */
+.VPNav {
+  background-color: rgba(5, 5, 8, 0.9) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #222;
+}
